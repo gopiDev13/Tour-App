@@ -1,0 +1,32 @@
+doctype html
+html
+    block head
+    
+        head
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            meta(http-equiv="Content-Security-Policy" content="script-src 'self' http://localhost:3000;")
+
+            title GStours | #{title}
+            link(rel='stylesheet', href='/css/style.css')
+            link(rel='shortcut icon', type='/image/png', href='/img/favicon.png')
+            link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,700' rel='stylesheet')
+            link(rel="stylesheet" href="/css/leaflet.css")
+
+    body 
+        //- Header
+        include header
+        //- Content  
+        block content 
+         h1 placeholder for heading  
+        //- main.main
+        //-     h1 tour 
+
+        //- Footer
+        include footer
+        //- script(type="module" src="/js/Leaflet.js")
+        //- script(type="module" src ="/js/axios.js")
+
+        //- script(type="module" src = "/js/login.js")
+        //- script(type="module" src='/js/map.js')
+        script(src = "/js/bundle.js")

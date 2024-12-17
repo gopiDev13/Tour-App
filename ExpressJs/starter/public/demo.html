@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Directory</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        width: 100vw;
+      }
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .header-left {
+        flex: 1;
+      }
+      .header-right {
+        flex: 1;
+        text-align: right;
+      }
+      .details {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .details div {
+        margin-bottom: 5px;
+      }
+      .email {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .section-title {
+        font-weight: bold;
+        width: 100%;
+        border: 0;
+        border-bottom-width: 3px;
+        border-color: orange;
+        border-style: solid;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .contacts {
+        display: flex;
+        justify-content: space-between;
+        height: 30%;
+      }
+      .contacts div {
+        background: rgb(226, 225, 225);
+        flex: 1;
+        padding: 10px;
+        margin-right: 10px;
+      }
+      .contacts div:last-child {
+        margin-right: 0;
+      }
+      .contacts div ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .contacts div ul li {
+        margin-bottom: 5px;
+      }
+      .contacts div ul li input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      .left-container {
+        width: 68%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+      .right-container {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+      .list-items-style {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .list-items-style > span {
+        width: 40%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <div>
+          <div class="header">
+            <div class="header-left">
+              <h2 class="section-title" style="text-align: left">
+                Lemley, Jeremy
+              </h2>
+              <div>Title: MANAGER, IT SERVICE ASSURANCE SYSTEMS</div>
+              <div>Company: Brightspeed</div>
+              <div>WORKS FROM HOME</div>
+              <div>WORKS FROM HOME FL 00000</div>
+              <div>United States</div>
+              <div>Building ID: FL0099 Floor: 00</div>
+              <div>Room: NONE</div>
+              <div class="email">
+                <div>
+                  Email:
+                  <a href="mailto:jeremy.lemley@brightspeed.com"
+                    >jeremy.lemley@brightspeed.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="details">
+            <hr style="margin-bottom: 10px" />
+            <div>CUID/Workstation Login: XB09677</div>
+            <div>Employee Type: Conveyed Employee</div>
+            <div>Business Entity: Brightspeed</div>
+            <div>Lumen SuccessFactors ID: 00337566</div>
+            <div>Cost Center: E0051030</div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div>
+            <div class="section-title">Employee Direct Reports (detail)</div>
+            <ul>
+              <li class="list-items-style">
+                <span> Preston, Robert (Rob)</span> <input type="checkbox" />
+                <span>+1 000 000 0000</span>
+              </li>
+              <li class="list-items-style">
+                <span>Wilson, Mitchell (Mitch) </span>
+                <input type="checkbox" /> <span>+1 999 999 0000</span>
+              </li>
+            </ul>
+            <li class="list-items-style">
+              <span style="margin-left: -10px"></span>
+              <input type="checkbox" /> <span>ALL / NONE</span>
+            </li>
+          </div>
+          <div>
+            <div class="section-title">Employee Direct Reports (detail)</div>
+            <ul>
+              <li class="list-items-style">
+                <span>Johnson, Christian A </span><input type="checkbox" />
+                <span>+1 999 999 0000</span>
+              </li>
+              <li class="list-items-style">
+                <span>Neupane, Pankaj</span> <input type="checkbox" /><span>
+                  +1 111 111 1111</span
+                >
+              </li>
+            </ul>
+            <li class="list-items-style">
+              <span style="margin-left: -10px"></span>
+              <input type="checkbox" /> <span>ALL / NONE</span>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="contacts" style="height: auto">
+          <div>
+            <div class="section-title">Management Chain</div>
+            <ul>
+              <li class="list-items-style">
+                <span>Johnson, Kathleen (Kate)</span>
+                <input type="checkbox" /> <span>+1 000 000 0000</span>
+              </li>
+              <li class="list-items-style">
+                <span>Mudge, Warren (Robert) R</span><input type="checkbox" />
+                <span> +1 999 999 0000</span>
+              </li>
+              <li class="list-items-style">
+                <span>Maguire, Thomas (Tom)</span><input type="checkbox" />
+                <span> +1 999 999 0000</span>
+              </li>
+              <li class="list-items-style">
+                <span>Saxena, Sorabh</span><input type="checkbox" />
+                <span>+1 000 000 0000</span>
+              </li>
+              <li class="list-items-style">
+                <span>Shroff, Nilesh D</span><input type="checkbox" /><span
+                  >+1 999 999 0000</span
+                >
+              </li>
+              <li class="list-items-style">
+                <span>Budharaju, Kishorraju (Kishor)</span
+                ><input type="checkbox" /><span> +1 999 999 0000</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <div>
+            <div class="section-title">Employee Peers</div>
+            <ul>
+              <li>
+                <input type="checkbox" /> Brown, William (Bill) +1 999 999 0000
+              </li>
+              <li>
+                <input type="checkbox" /> Carter, Christopher +1 999 999 0000
+              </li>
+              <li>
+                <input type="checkbox" /> Givens, C Jason (Jason) +1 999 999
+                0000
+              </li>
+            </ul>
+            <li class="list-items-style">
+              <span style="margin-left: -10px"></span>
+              <input type="checkbox" /> <span>ALL / NONE</span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
